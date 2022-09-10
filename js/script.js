@@ -21,7 +21,7 @@ function revealMessage2() {
 }
 
 function play() {
-	var audio = new Audio("sound_effects/8d82b5_Baseball_Hit_Sound_Effect.mp3");
+	var audio = new Audio("sound_effects/Baseball_Hit_Sound_Effect.mp3");
 	audio.play();
   }
 

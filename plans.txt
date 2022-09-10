@@ -1,0 +1,28 @@
+- database
+	- sqlite, postgress, mysql?
+	- find a way to store data for teams 
+	- have ability to export a weekly report
+	- can use WFRC server
+	- backup database every day in case someone messes up?
+
+- database schema
+	- teams
+		- (team_id, team_name, first_name, last_name)
+	- bats
+		- (bat_id, team_id, datetime, result (out, single, double, triple, or homerun))
+
+- dropdown to select team from list
+	- light authentication or nah?
+
+- click button to bat
+	- randomly return (out, single, double, triple, or homerun)
+	- different sound effects for each
+	- equal odds?
+	- record bat result in database
+
+- separate script to access and print database result
+	- python?
+	
+	
+- firebase?
+
