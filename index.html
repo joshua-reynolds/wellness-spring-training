@@ -17,12 +17,30 @@
 			<u>Rules for Play</u> <br>
 			<ol type="1"></ol>
 			<li>Every time you exercise for 20 minutes or more from March 1st until March 31st your team gets an at-bat. Record your at-bat. </li>
-			<li> Your at-bats will be translated, using a random generator, to: an out, a single, a double, a triple, or a homerun. For every runner that makes it back to home base, your team will get a run on the scoreboard. </li>
+			<li> Your at-bats will be translated, using a random generator, to: an out, a single, a double, a triple, or a homerun. </li>
+			<li>For every runner that makes it back to home base, your team will get a run on the scoreboard. </li>
 			<li>Every week, the Beehive League will send a summary of what happened during the week's inning. </li>
 		</p>
+		
 		<br>
-		<p> Click the button until it reaches zero for a special message! </p>
+		
+		<div id="dropd" >
+			<label for="participants">Who is batting:</label>
+
+			<select name="participants" id="cars">
+				<option value="---">---</option>
+				<option value="Bill">Bill</option>
+				<option value="Josh">Josh</option>
+				<option value="Julie">Julie</option>
+				<option value="Suzie">Suzie</option>
+				
+			</select>
+		</div>
+		
+		
+		
 		<br>
+		<!--<p> Click the button until it reaches zero for a special message! </p>-->
 
 		
 		<!--<button type="button" onclick="revealMessage()"> Play ball! </button> 
@@ -31,9 +49,13 @@
 			<p> You are going to die! </p>
 			<button type="button" id="countDownButton" onclick="countDown()">10</button>
 		</div> -->
-
+		
+		
+		
 		<div id="test" > 
-			<button type="button" id="countDownButton2" onclick="countDown2()">3 </button>
+			<!--<button type="button" id="countDownButton2" onclick="countDown2()"> 3 </button>-->
+			<button type="button" onclick="bat()"> Record a Bat </button>
+			<p id="bat_result"></p>
 		</div>
 
 		<div id="hiddenMessage2" style="display:none"> 
