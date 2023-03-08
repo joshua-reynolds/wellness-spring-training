@@ -1,6 +1,6 @@
 # wellness-spring-training
 
-![Wellness](graphics/Capture.png)
+![Wellness](graphics\Capture.png)
 
 
 Following these tutorials:
