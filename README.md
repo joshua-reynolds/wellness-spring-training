@@ -1,8 +1,5 @@
 # wellness-spring-training
 
-![Wellness](./graphics/Capture.PNG)
-
-
 Following these tutorials:
 - https://medium.com/codeburst/how-to-style-your-website-with-css-e72e7046fda5
 - https://medium.com/@blondiebytes/how-to-create-interactive-websites-with-javascript-627a6d998fed
@@ -16,8 +13,15 @@ Following these tutorials:
 
 
 To do list:
-- show how many bats
-- show previous bat result
-- show basemen
-- drop down button enhancements on mobile
-- mobile friendliness
+- interface
+- functions
+	- return_team_name() [x]
+	- bat() [x]
+
+- implement on bluehost/cpanel [x]
+- add outs system
+- alphabetically sort team names [x]
+- show 2022 champs at the top
+- without batting
+	- show how many bats
+	- show previous bat result

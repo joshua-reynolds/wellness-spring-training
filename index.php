@@ -1,6 +1,7 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Wellness Spring Training</title>
 	<link rel='stylesheet'  href="main.css?v=<?php echo time(); ?>">
 	<script src="script.js"></script>
@@ -51,23 +52,38 @@ include_once 'includes/dbconnect.inc.php';
 		
 		<br>
 
+		
+
 		<form action="includes/insert.inc.php" method="POST">
-			<select id="teamSelect" name="team_name" onchange="enableButton()" style="font-family: Verdana, sans-serif;font-size: 16px;width:240px;font-size: 16px;font-family: Arial, Helvetica, sans-serif;">
-				<option selected disabled>----- Select your team -----</option>
-				<?php
-					$sqli = "SELECT team_id,name FROM teams";
-					$result = mysqli_query($conn, $sqli);
-					while ($row = mysqli_fetch_array($result)){
-						echo '<option>'.$row['name'].'</option>';
-					}
-					
-				?>
-				</select>
-					
+			<div class="select">
+				<select id="teamSelect" name="team_name" onchange="enableButton()" >
+					<option selected disabled>----- Select your team -----</option>
+					<?php
+						$sqli = "SELECT team_id,name FROM teams";
+						$result = mysqli_query($conn, $sqli);
+						while ($row = mysqli_fetch_array($result)){
+							echo '<option>'.$row['name'].'</option>';
+						}
+						
+					?>
+					</select>
+			</div>
+			
+
 			<br>
 			<br>
 			<button id='bat_button' class="btn success" type="submit" name="submit" onclick="" disabled> Record an at-bat </button>
 		</form>
+
+		
+		
+		
+			
+		
+		
+
+
+
 	</div>
 	
 	<div class="footer">
