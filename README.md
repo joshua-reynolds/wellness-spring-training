@@ -2,6 +2,8 @@
 
 A baseball-themed web application developed for the WFRC wellness team using PHP and mySQL
 
+![Screenshot](graphics\Capture.PNG)
+
 Following these tutorials:
 - https://medium.com/codeburst/how-to-style-your-website-with-css-e72e7046fda5
 - https://medium.com/@blondiebytes/how-to-create-interactive-websites-with-javascript-627a6d998fed
