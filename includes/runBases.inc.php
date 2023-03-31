@@ -12,14 +12,20 @@
             $_runs = $_runs + 1; 
   
             // if runner is on base, runner scores and base count is reset
-            foreach(array($_runner1, $_runner2, $_runner3) as $_runner){
+            $_runners = array($_runner1, $_runner2, $_runner3);
+            foreach($_runners as &$_runner){
                 if ($_runner > 0){
                     $_runs = $_runs + 1;
                     $_runner = 0;
                 }
             }
-            // return runners and runs
-            return array($_runner1, $_runner2, $_runner3, $_runs, $_new_outs);
+
+            // append runs, outs to runners array
+            array_push($_runners, $_runs, $_new_outs);
+
+            // return runners, runs, outs
+            return $_runners;
+     
         }
         // if single, double, or triple
         if($_batResult > 0 && $_batResult < 4){
