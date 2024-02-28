@@ -67,6 +67,3 @@
 
   // header("Location: ../index.php?bat=success");
   header("Location: ../result.php");
-
-
-?>
