@@ -38,9 +38,9 @@
 			<h1>
                 <?php 
                     if ($_SESSION["bat_result"]==0){
-                        echo 'Better luck next time';
+                        echo 'Better luck next time, ' . $team_name;
                     } else {
-                        echo 'Nice Work!';
+                        echo 'Nice Work, ' . $team_name .'!';
                     };
                 ?>
             </h1>
@@ -82,11 +82,6 @@
         </div>
         
         <div id="contentDiv3">
-            <div id=runsP>
-                <?php
-                    echo "<b>$team_name</b>";
-                ?>
-            </div>
         
             <div id=runsP>
                 <?php
@@ -119,7 +114,7 @@
                         echo "<br><br>";
                     }
                     elseif(in_array(1, $runners) == true && in_array(2, $runners) == false  && in_array(3, $runners) == true){
-                        echo '<img src="graphics/bases-first-third.png" alt="homerun"';
+                        echo '<img id=bases src="graphics/bases-first-third.png" alt="homerun"';
                         echo "<br><br>";
                     }
                     elseif(in_array(1, $runners) == false && in_array(2, $runners) == true  && in_array(3, $runners) == true){
