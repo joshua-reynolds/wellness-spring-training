@@ -94,56 +94,56 @@ function bat2() {
 }
 
 window.onload = function () {
-  document.getElementById("teamSelect").addEventListener("change", function () {
-    // Clear the content of the div
-    // document.getElementById("contentDiv").innerHTML = "status goes here...";
-	
-	
-	var team_name = document.getElementById("teamSelect").value;
-	console.log(team_name)
-	var team = teams.find(team => team.name === team_name);
-	var r1 = parseInt(team.runner1);
-	var r2 = parseInt(team.runner2);
-	var r3 = parseInt(team.runner3);
-	var runners = Array(r1, r2, r3);
-	var runs = parseInt(team.runs);
-	var outs = parseInt(team.outs);
+	if(document.getElementById("teamSelect")){
+		document.getElementById("teamSelect").addEventListener("change", function () {
+			// Clear the content of the div
+			// document.getElementById("contentDiv").innerHTML = "status goes here...";
+			
+			
+			var team_name = document.getElementById("teamSelect").value;
+			console.log(team_name)
+			var team = teams.find(team => team.name === team_name);
+			var r1 = parseInt(team.runner1);
+			var r2 = parseInt(team.runner2);
+			var r3 = parseInt(team.runner3);
+			var runners = Array(r1, r2, r3);
+			var runs = parseInt(team.runs);
+			var outs = parseInt(team.outs);
 
-	// current runners (query database)
-	if (runners.includes(1) == true && runners.includes(2) == true && runners.includes(3) == true){
-		var image =  '<img id=bases src="graphics/bases-first-second-third.png" alt="homerun">';
-	}
-	else if(runners.includes(1) == true && runners.includes(2) == true && runners.includes(3) == false){
-		var image =  '<img id=bases src="graphics/bases-first-second.png" alt="homerun">';
-	}
-	else if(runners.includes(1) == true && runners.includes(2) == false && runners.includes(3) == true){
-		var image =  '<img id=bases src="graphics/bases-first-third.png" alt="homerun">';
-	}
-	else if(runners.includes(1) == false && runners.includes(2) == true && runners.includes(3) == true){
-		var image =  '<img id=bases src="graphics/bases-second-third.png" alt="homerun">';
-	}
-	else if(runners.includes(1) == true && runners.includes(2) == false && runners.includes(3) == false){
-		var image =  '<img id=bases src="graphics/bases-first-only.png" alt="homerun">';
-	}
-	else if(runners.includes(1) == false && runners.includes(2) == true && runners.includes(3) == false){
-		var image =  '<img id=bases src="graphics/bases-second-only.png" alt="homerun">';
-	}
-	else if(runners.includes(1) == false && runners.includes(2) == false && runners.includes(3) == true){
-		var image =  '<img id=bases src="graphics/bases-third-only.png" alt="homerun">';
-	}
-	else if(runners.includes(1) == false && runners.includes(2) == false && runners.includes(3) == false){
-		var image =  '<img id=bases src="graphics/bases-empty.png" alt="homerun">';
-	}
+			// current runners (query database)
+			if (runners.includes(1) == true && runners.includes(2) == true && runners.includes(3) == true){
+				var image =  '<img id=bases src="graphics/bases-first-second-third.png" alt="homerun">';
+			}
+			else if(runners.includes(1) == true && runners.includes(2) == true && runners.includes(3) == false){
+				var image =  '<img id=bases src="graphics/bases-first-second.png" alt="homerun">';
+			}
+			else if(runners.includes(1) == true && runners.includes(2) == false && runners.includes(3) == true){
+				var image =  '<img id=bases src="graphics/bases-first-third.png" alt="homerun">';
+			}
+			else if(runners.includes(1) == false && runners.includes(2) == true && runners.includes(3) == true){
+				var image =  '<img id=bases src="graphics/bases-second-third.png" alt="homerun">';
+			}
+			else if(runners.includes(1) == true && runners.includes(2) == false && runners.includes(3) == false){
+				var image =  '<img id=bases src="graphics/bases-first-only.png" alt="homerun">';
+			}
+			else if(runners.includes(1) == false && runners.includes(2) == true && runners.includes(3) == false){
+				var image =  '<img id=bases src="graphics/bases-second-only.png" alt="homerun">';
+			}
+			else if(runners.includes(1) == false && runners.includes(2) == false && runners.includes(3) == true){
+				var image =  '<img id=bases src="graphics/bases-third-only.png" alt="homerun">';
+			}
+			else if(runners.includes(1) == false && runners.includes(2) == false && runners.includes(3) == false){
+				var image =  '<img id=bases src="graphics/bases-empty.png" alt="homerun">';
+			}
 
-	// message1 = `<p> Total Runs: ${runs}</p> <p> Current Outs: ${outs}</p>`
-	message1 = `Total Runs: ${runs}`
-	message2 = `Current Outs: ${outs}` 
-	document.getElementById("contentDiv").style.display = 'none';
-	document.getElementById("contentDiv2").style.display = 'block';
-	document.getElementById("runsP").innerHTML = message1;
-	document.getElementById("outsP").innerHTML = message2;
-	document.getElementById("runnersDiv").innerHTML = image;
-
-
-  });
+			// message1 = `<p> Total Runs: ${runs}</p> <p> Current Outs: ${outs}</p>`
+			message1 = `Total Runs: ${runs}`
+			message2 = `Current Outs: ${outs}` 
+			document.getElementById("contentDiv").style.display = 'none';
+			document.getElementById("contentDiv2").style.display = 'block';
+			document.getElementById("runsP").innerHTML = message1;
+			document.getElementById("outsP").innerHTML = message2;
+			document.getElementById("runnersDiv").innerHTML = image;
+		});
+	}
 };
