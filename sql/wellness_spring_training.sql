@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wellness_spring_training`
+-- Database: `wellness_spring_training_2024`
 --
 
 -- --------------------------------------------------------
@@ -88,12 +88,13 @@ INSERT INTO `teams` (`team_id`, `name`, `runner1`, `runner2`, `runner3`, `outs`,
 (23, 'Natesville Narwhals', 0, 0, 0, 0, 0),
 (24, 'Pearsonville Felines', 0, 0, 0, 0, 0),
 (25, 'Reynoldstown Wrappers', 0, 0, 0, 0, 0),
-(26, 'Rosieville Riveters', 0, 0, 0, 0, 0),
-(27, 'Sudsville Swimmers', 0, 0, 0, 0, 0),
-(28, 'Timtown Trekkers', 0, 0, 0, 0, 0),
-(29, 'Victorville Vicars', 0, 0, 0, 0, 0),
-(30, 'Wellsville Kakuros', 0, 0, 0, 0, 0),
-(31, 'Worthenton Originals', 0, 0, 0, 0, 0)
+(26, 'Rylanta Falcons', 0, 0, 0, 0, 0),
+(27, 'Rosieville Riveters', 0, 0, 0, 0, 0),
+(28, 'Sudsville Swimmers', 0, 0, 0, 0, 0),
+(29, 'Timtown Trekkers', 0, 0, 0, 0, 0),
+(30, 'Victorville Vicars', 0, 0, 0, 0, 0),
+(31, 'Wellsville Kakuros', 0, 0, 0, 0, 0),
+(32, 'Worthenton Originals', 0, 0, 0, 0, 0)
 
 --
 -- Constraints for dumped tables

@@ -3,8 +3,8 @@
 <head>
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 	<title>Wellness Spring Training</title>
-	<link rel='stylesheet'  href="main.css?v=<?php echo time(); ?>">
-	<script src="script.js"></script>
+	<link rel='stylesheet'  href="css/style.css?v=<?php echo time(); ?>">
+	<script src="js/script.js"></script>
 </head>
 
 <?php
