@@ -51,7 +51,7 @@
 		</div>
 
 		<div id="titleDiv">
-			<h1 >Welcome to Spring Wellness Training 2025</h1>
+			<h1>Beehive League Spring Training (2025)</h1>
 		</div>
 
 	</div>
@@ -105,7 +105,7 @@
 					<select id="teamSelect" name="team_name" onchange="enableButton()" >
 						<option selected disabled>----- Select your team -----</option>
 						<?php
-							$sqli = "SELECT team_id,name FROM teams";
+							$sqli = "SELECT team_id,name FROM teams ORDER BY teams.name ASC;";
 							$result = mysqli_query($conn, $sqli);
 							while ($row = mysqli_fetch_array($result)){
 								echo '<option>'.$row['name'].'</option>';

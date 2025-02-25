@@ -16,7 +16,7 @@ html, body {
 
 
 h1{
-    color:#3D8DC0;
+    color:#EFBF04;
     font-family: Verdana, sans-serif;
     margin: 0 auto;
 }
@@ -319,12 +319,12 @@ tr:nth-child(even) {
       /* border: 2px solid #23f3d0;
       font-family: Verdana, sans-serif; */
       font-size:.75rem;
-      width: 85%;
+      width: 90%;
       padding-left: 0px;
     }
 
     #contentDiv2{
-      width: 85%;
+      width: 90%;
     }
 
     #imageContentDiv{
