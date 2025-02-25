@@ -18,22 +18,34 @@ html, body {
 h1{
     color:#3D8DC0;
     font-family: Verdana, sans-serif;
+    margin: 0 auto;
 }
 
 h2{
-    color:#085287;
+    color:#000000;
     font-family: Verdana, sans-serif;
+    text-align:center;
+    margin: 0 auto;  
+
 }
+
+i, u {
+  color:#005f9b;
+  font-weight: bold;
+}
+
+
 
 
 
 #headerDiv {
   margin: 0;
-  height: 100px;
+  height: 80px;
   width: 100%;
   /* vertical-align: middle; */
   display: flex;
   flex-direction:column;
+  text-align:center;
   background-color: #333;
   /* border: 2px solid #f3f023; */
   padding:2px;
@@ -42,7 +54,6 @@ h2{
 
 #logoDiv{
   flex:1;
-  padding-left:5px;
 }
 
 #logo{
@@ -53,36 +64,47 @@ h2{
 #titleDiv{
   flex:1;
   font-size: 12px;
-  text-align:left;
-  padding-left:5px
+  padding: .5px;
 }
 
 #imageContentDiv{
   display: flex;
   flex-direction:column;
+  width: 100%;
+  margin: 0 auto;  
+  
 }
 
 #image {
-  width:400px; 
-  height: auto;
+  /* width:400px; */
+  height:330px; 
+  /* height: auto; */
   outline-style: solid;
 }
 #imageDiv{
-  padding:10px
+  padding:10px;
+  text-align:center;
 }
 
 #contentDiv{
   font-family: Verdana, sans-serif;
   font-size:14px;
-  padding:10px;
-  /* background-color: #e4e4e4; */
+  padding:3px;
+  padding-left: 10px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #contentDiv2{
   font-family: Verdana, sans-serif;
   font-size:14px;
   display:none;
-  padding:10px;
+  padding:3px;
+  width: 60%;
+  margin: 0 auto;   
+  line-height: 1.5;
+  text-align:center;
+  
   /* background-color: #e4e4e4; */
 }
 
@@ -91,7 +113,14 @@ h2{
   font-family: Verdana, sans-serif;
   font-size:14px;
   padding:10px; 
+  text-align:center;
+
   /* background-color: #e4e4e4; */
+}
+
+#standingsDiv{
+  justify-content: center;
+  display: flex;
 }
 
 #bases{
@@ -102,7 +131,11 @@ h2{
 
 #teamSelectorDiv{
   /* background-color: #e4e4e4; */
-  padding:10px;
+  padding:5px;
+  text-align:center;
+  justify-content: center;
+  align-items: center; 
+  display: flex; 
 }
 
 #footerDiv{
@@ -112,14 +145,16 @@ h2{
   font-family: Verdana, sans-serif;
   font-size:14px;
   margin-top: auto;
+  text-align:center;
 }
 
-#runsP, #outsP {
+#runsP, #outsP, #atBatsP {
   font-weight: bold;
+  font-size:18px;
 }
 
 .flex-container {
-  background-color: #a3a3a3;
+  background-color: #e4e4e4;
   display: flex;
   flex-direction: column;
   flex:1;
@@ -241,7 +276,7 @@ tr:nth-child(even) {
   @media all and (max-width:640px){
     h2{
       font-size: 15px;
-      color:#085287;
+      /* color:#085992; */
       font-family: Verdana, sans-serif;
     }
 
@@ -283,10 +318,20 @@ tr:nth-child(even) {
     #contentDiv{
       /* border: 2px solid #23f3d0;
       font-family: Verdana, sans-serif; */
-      font-size:.70rem;
+      font-size:.75rem;
+      width: 85%;
+      padding-left: 0px;
     }
 
-    #runsP, #outsP {
+    #contentDiv2{
+      width: 85%;
+    }
+
+    #imageContentDiv{
+      width: 100%;
+    }
+
+    #runsP, #outsP, #atBatsP {
       font-weight: bold;
       justify-content: center;
       display: flex;
@@ -308,12 +353,6 @@ tr:nth-child(even) {
       justify-content: center;
       display: flex;
     }
-
-    #standingsDiv{
-      justify-content: center;
-      display: flex;
-    }
-
   }
 
 

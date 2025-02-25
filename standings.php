@@ -35,12 +35,12 @@
 		
 		<div id="logoDiv">
 			<a href="https://wfrc.org/">
-				<img src="graphics/logo.png" id="logo"  >
+				<img src="graphics/WFRC logo long white_transparent.png" id="logo"  >
 			</a>
 		</div>
 
 		<div id="titleDiv">
-			<h1 >Standings!</h1>
+			<h1 >Standings</h1>
 		</div>
 
 	</div>
@@ -63,7 +63,7 @@
 			</table>
 		</div>
 		<?php endif;?>
-
+		<br>
 		<div id="teamSelectorDiv">
             <div id=buttonDiv>
                 <button id='restart' class="btn success" onclick="redirectTo('index.php')"> Return to main page </button>
@@ -71,7 +71,7 @@
         </div>	
 
 		<div id="footerDiv">
-			<b>2023 Winners</b>: <b style="color: gold;">1. Bentown Tippers</b>,  <b style="color: silver;">2T. Dayville Daytrippers</b>, <b style="color: silver;">2T. Megtown Senders</b>
+			<b>2024 Winners</b>: <b style="color: EFBF04;">1. Bentown Tippers</b>,  <b style="color: A5A9B4;">2. Billville Jovyans</b>, <b style="color: CD7F32;">3. Dayville Daytrippers</b>
 		</div>
 
 	</div>
